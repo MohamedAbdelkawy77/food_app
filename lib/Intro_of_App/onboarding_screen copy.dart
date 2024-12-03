@@ -54,8 +54,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                 ),
                 SizedBox(height: 40),
-                isLastPage
-                    ? ElevatedButton(
+                isLastPage? ElevatedButton(
                         onPressed: () {
                           // Navigate to the second page
                           Navigator.push(
@@ -66,6 +65,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         },
                         child: Text("Get Started"),
                       )
+                      
                     : TextButton(
                         onPressed: () {
                           _controller.nextPage(
